@@ -278,7 +278,19 @@ outlining an enhancement that adds a full analytics layer using MongoDB aggregat
   efficiently determine which objects should be rendered. 
 </p>
 
+<p>
+  
+  When introducing the Octree enhancement, it’s important to acknowledge the design trade‑offs 
+  involved. As Knoll (2006) explains, “the principle of recursive eight‑fold subdivision of 
+  space is common to all octrees… however, several varieties exist depending on the desired 
+  application” (p. 2). This reinforces that while octrees offer clear performance benefits,
+  such as accelerating visibility queries and reducing unnecessary rendering work, they also 
+  introduce additional memory overhead, more complex traversal logic, and a higher implementation 
+  cost compared to a simple list of objects. My decision to integrate an Octree is not arbitrary. 
+  It reflects a thoughtful balance between scalability, efficiency, and architectural complexity, 
+  grounded in well‑established algorithmic considerations.
 
+</p>
 
 <h2 id="databases">Databases Artifact</h2>
 <p>
@@ -345,6 +357,18 @@ outlining an enhancement that adds a full analytics layer using MongoDB aggregat
   insights into adoption trends, animal intake, and shelter operations.
 </p>
 
+    <p>
+      Adding advanced analytics to an animal shelter’s database system can directly improve operational 
+      decision‑making and overall efficiency. By identifying high‑adoption breeds, predicting length of stay, 
+      and revealing seasonal intake trends, shelters can allocate resources more effectively, 
+      reducing overcrowding, and they can streamline staffing. These insights also help 
+      shelters tailor outreach campaigns, prioritize animals that need extra visibility, and 
+      optimize partnerships with rescues or foster networks. Over time, better forecasting 
+      and data‑driven planning can reduce operational costs, improve adoption outcomes, 
+      and even increase revenue through targeted fundraising, grant justification, and 
+      community engagement efforts that are backed by clear, compelling, and now very visual data.
+    </p>
+
 <p>
   This enhancement demonstrates my ability to design reliable database systems, 
   apply secure coding practices, and create maintainable backend logic that 
@@ -355,7 +379,10 @@ outlining an enhancement that adds a full analytics layer using MongoDB aggregat
 
 </div>
 
-
+<h2>References</h2>
+  <p>Knoll, A. (2006). A survey of octree volume rendering methods. 
+    Scientific Computing and Imaging Institute, University of Utah
+</p>
 
 <script>
   const toggleBtn = document.getElementById("theme-toggle");
