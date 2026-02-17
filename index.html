@@ -1,3 +1,9 @@
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
 <h1>Sophie Biondolillo's Portfolio</h1>
 
 
@@ -34,34 +40,6 @@
 </button>
 
 </div>
-
-
-
-
-<script>
-  const toggleBtn = document.getElementById("theme-toggle");
-  const body = document.body;
-
-  // Load saved theme
-  if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-    toggleBtn.textContent = "Light Mode";
-  }
-
-  toggleBtn.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-
-    if (body.classList.contains("dark-mode")) {
-      toggleBtn.textContent = "Light Mode";
-      localStorage.setItem("theme", "dark");
-    } else {
-      toggleBtn.textContent = "Dark Mode";
-      localStorage.setItem("theme", "light");
-    }
-  });
-</script>
-</body>
-</html>
 
 
 
@@ -355,4 +333,34 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
   supports real‑world data workflows. It shows my ability to integrate 
   visual analytics to support organizational decision‑making.
 </p>
+
+
+
+
+
+
+<script>
+  const toggleBtn = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  // Load saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggleBtn.textContent = "Light Mode";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+      toggleBtn.textContent = "Light Mode";
+      localStorage.setItem("theme", "dark");
+    } else {
+      toggleBtn.textContent = "Dark Mode";
+      localStorage.setItem("theme", "light");
+    }
+  });
+</script>
+</body>
+</html>
 
