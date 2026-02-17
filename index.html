@@ -70,6 +70,18 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
   allowfullscreen>
 </iframe>
 
+  <p>
+
+This code review evaluates three major artifacts from my computer science coursework, focusing on 
+software design, algorithms, and database engineering. It begins with a C++ XOR encryption program, 
+assessing its procedural structure, security weaknesses, and lack of modularity, followed by a plan to 
+refactor it using object‑oriented design and integrity checking. The second section reviews a 3D OpenGL 
+scene, identifying architectural limitations in its hard‑coded rendering pipeline and proposing an Octree 
+data structure to improve scalability and performance. The final section analyzes a Python CRUD module for 
+an animal shelter dataset, highlighting its minimal defensive programming and limited functionality, then 
+outlining an enhancement that adds a full analytics layer using MongoDB aggregation. 
+
+  </p>
 
 
 <h2 id="software-design">Software Design & Engineering Artifact</h2>
@@ -292,26 +304,31 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
   </li>
 </ul>
 
+
+
 <h3>Visual Architecture & Dashboard</h3>
 
-<div style="display: flex; flex-direction: column; gap: 20px; max-width: 800px;">
-  <figure>
-    <img src="AnimalShelter_UML.png" alt="Animal Shelter UML Diagram" style="width: 100%; border: 1px solid #ccc;">
-    <figcaption style="text-align: center; margin-top: 8px;">
-      <strong>Figure 1:</strong> UML Class Diagram for the Animal Shelter System
-    </figcaption>
-  </figure>
+<div class="two-column">
+  
+  <!-- LEFT COLUMN: IMAGES -->
+  <div class="left-col">
+    <figure>
+      <img src="AnimalShelter_UML.png" alt="Animal Shelter UML Diagram">
+      <figcaption>
+        <strong>Figure 1:</strong> UML Class Diagram for the Animal Shelter System
+      </figcaption>
+    </figure>
 
-  <figure>
-    <img src="AnimalAnalyticsDashboard.png" alt="Animal Analytics Dashboard" style="width: 100%; border: 1px solid #ccc;">
-    <figcaption style="text-align: center; margin-top: 8px;">
-      <strong>Figure 2:</strong> Enhanced Analytics Dashboard for Data Insights
-    </figcaption>
-  </figure>
-</div>
+    <figure>
+      <img src="AnimalAnalyticsDashboard.png" alt="Animal Analytics Dashboard">
+      <figcaption>
+        <strong>Figure 2:</strong> Enhanced Analytics Dashboard for Data Insights
+      </figcaption>
+    </figure>
+  </div>
 
-<h2>Summary</h2>
-
+  <!-- RIGHT COLUMN: SUMMARY TEXT -->
+  <div class="right-col">
 <p>
   The original database implementation provided basic CRUD functionality but lacked 
   strong validation, error handling, or structural clarity. The enhancement focused 
@@ -333,9 +350,9 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
   supports real‑world data workflows. It shows my ability to integrate 
   visual analytics to support organizational decision‑making.
 </p>
+  </div>
 
-
-
+</div>
 
 
 
