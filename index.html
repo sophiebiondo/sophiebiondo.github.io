@@ -1,7 +1,45 @@
 <h1>Sophie Biondolillo's Portfolio</h1>
 
 
-<h2>Self-Assessment</h2>
+<style>
+  .navbar {
+    background-color: #f2f2f2;
+    padding: 12px 20px;
+    border-bottom: 2px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="navbar">
+  <a href="#self-assessment">Self‑Assessment</a>
+  <a href="#code-review">Code Review</a>
+  <a href="#software-design">Software Design & Engineering</a>
+  <a href="#algorithms">Algorithms & Data Structures</a>
+  <a href="#databases">Databases</a>
+  <button id="theme-toggle" style="float: right; font-weight: bold; cursor: pointer;">
+  Dark Mode
+</button>
+
+</div>
+
+
+
+
+<h2 id="self-assessment">Self-Assessment</h2>
+
 
 <p>My Computer Science program and the development of this ePortfolio have shaped me into a thoughtful, capable, and security minded software engineer. The coursework built my technical foundation while teaching me how to design maintainable systems, communicate effectively, and approach problems with both creativity and discipline. Building this portfolio allowed me to demonstrate how I think as a computing professional.
 Throughout the program, I gained experience collaborating in environments where clear communication and version control discipline were essential for project flow. These projects taught me how to coordinate tasks, integrate code across contributors, and maintain transparency so the project could move forward efficiently. I also learned to adapt my communication style for different audiences, such as technical documentation and design proposals as explanations for non technical stakeholders. 
@@ -14,7 +52,8 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
 
 
 
-<h2>Code Review</h2>
+<h2 id="code-review">Code Review</h2>
+
 <p>This video link takes you to a review of the artifacts enhanced in this project, walking through the room for growth  in the original artifacts and the proposed changes to each artifact.</p>
 
 <iframe 
@@ -26,7 +65,7 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
 
 
 
-<h2>Software Design & Engineering Artifact</h2>
+<h2 id="software-design">Software Design & Engineering Artifact</h2>
 <p>
   This section presents the Software Design and Engineering enhancement. The artifact selected for this
   category is an encryption program originally developed in CS 405: Secure
@@ -47,6 +86,28 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
     </a>
   </li>
 </ul>
+
+<h3>Encryption Program UML Diagram</h3>
+
+<figure style="max-width: 800px; margin: 20px auto;">
+  <img src="Encryption_UML.png" 
+       alt="UML diagram of the enhanced encryption program architecture" 
+       style="width: 100%; border: 1px solid #ccc;">
+  <figcaption style="text-align: center; margin-top: 8px;">
+    <strong>Figure:</strong> UML diagram showing the modular architecture of the 
+    enhanced encryption program, including controller, file management, 
+    encryption, and integrity components.
+  </figcaption>
+</figure>
+
+<p>
+  This UML diagram illustrates the redesigned architecture of the enhanced 
+  encryption program. It shows the separation of concerns across 
+  components such as the application controller, file manager, encryption 
+  layer, and integrity checker. 
+</p>
+
+
 
 <h2>Summary</h2>
 <p>
@@ -79,7 +140,7 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
 </p>
 
 
-<h2>Algorithms & Data Structures</h2>
+<h2 id="algorithms">Algorithms & Data Structures</h2>
 <p>
   This section presents the Algorithms & Data Structures enhancement with my
   3D Graphics Scene project. The artifact selected for this category is the
@@ -136,9 +197,7 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
       <source src="CS499_Octree_Enhancement.mp4">
     </video>
   </div>
-
 </div>
-
 
 <h2>Summary</h2>
 
@@ -181,9 +240,28 @@ Creating this ePortfolio helped me articulate my strengths and recognize the val
 </p>
 
 
+<h3>Octree Enhancement Flowchart</h3>
 
-<h2>Databases Artifact</h2>
+<figure style="max-width: 800px; margin: 20px auto;">
+  <img src="Octree_Flowchart.png" 
+       alt="Flowchart illustrating the Octree enhancement process" 
+       style="width: 100%; border: 1px solid #ccc;">
+  <figcaption style="text-align: center; margin-top: 8px;">
+    <strong>Figure:</strong> Flowchart showing the Octree insertion, subdivision, 
+    frustum culling, and rendering workflow.
+  </figcaption>
+</figure>
 
+<p>
+  This flowchart provides a visual overview of the enhanced Octree system used 
+  in the 3D graphics scene. It shows how objects are inserted, how nodes 
+  subdivide when capacity is exceeded, and how frustum culling is used to 
+  efficiently determine which objects should be rendered. 
+</p>
+
+
+
+<h2 id="databases">Databases Artifact</h2>
 <p>
   This section presents the Databases enhancement completed for CS 499. 
   The artifact selected for this category is the Animal Shelter Analytics 
