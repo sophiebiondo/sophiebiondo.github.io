@@ -1,0 +1,101 @@
+
+/*        THEME COLORS       */
+
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #ccc;
+  --nav-bg: #f2f2f2;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #e6e6e6;
+  --border-color: #555;
+  --nav-bg: #2a2a2a;
+}
+
+
+/*        GLOBAL STYLES      */
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+}
+
+
+/*        NAVIGATION BAR     */
+
+
+.navbar {
+  background-color: var(--nav-bg);
+  padding: 12px 20px;
+  border-bottom: 2px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+#theme-toggle {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--text-color);
+}
+
+
+/*        FIGURES & IMAGES   */
+
+figure {
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+figure img {
+  width: 100%;
+  border: 1px solid var(--border-color);
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 8px;
+}
+
+
+/*        VIDEO GRID         */
+
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.video-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
